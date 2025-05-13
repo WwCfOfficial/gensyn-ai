@@ -120,7 +120,7 @@ source .venv/bin/activate
   * `A`: Math (GSM8K dataset) -- Lower systems (>8GB) -- Use Small model (0.5B or 1.5B) for it.
   * `B`: Math Hard (DAPO-Math 17K dataset) -- Higher systems -- Use Big model (7B, 32B or 72B) for it.
 * `How many parameters (in billions)? [0.5, 1.5, 7, 32, 72]` >>> `0.5` is minimal and `72` is very big model. Choose based on your system.
-* Check Step [Hardware Requirement](https://github.com/0xmoei/gensyn-ai/blob/main/README.md#hardware-requirements) for more clue.
+* Check Step [Hardware Requirement](https://github.com/WwCfOfficial/gensyn-ai?tab=readme-ov-file#hardware-requirements) for more clue.
 
 ---
 
@@ -307,7 +307,7 @@ cp ~/swarm.pem ./swarm.pem
 * If you had any local changes, you have to do it again.
 
 ### 3- Re-run Node
-Head back to [4) Run the swarm](https://github.com/0xmoei/gensyn-ai/edit/main/README.md#4-run-the-swarm) and re-run Node.
+Head back to [4) Run the swarm](https://github.com/WwCfOfficial/gensyn-ai?tab=readme-ov-file#4-run-the-swarm) and re-run Node.
 
 ---
 
