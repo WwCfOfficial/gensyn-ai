@@ -334,3 +334,37 @@ nano $(python3 -c "import hivemind.p2p.p2p_daemon as m; print(m.__file__)")
 ```
 * Search for line: `startup_timeout: float = 15`, then change `15` to `120` to increate the Daemon's timeout. the line should look like this: `startup_timeout: float = 120`
 * To save the file: Press `Ctrl + X`, `Y` & `Enter`
+
+## Website Loading & Error Fix
+
+1) Steps to solve loading screen
+
+Stop everything with Ctrl + C
+
+2) Navigate to the project folder:
+```
+cd rl-swarm
+```
+
+3) Open the file for editing:
+```
+nano modal-login/app/page.tsx
+```
+
+4) Use the arrow keys to scroll down in this file and look for this line:
+return (<main className="flex min-h-screen flex-col items-center gap-4 justify-center text-center">
+
+5) Just above that `return` line, paste the following code (make sure there is one line of space between the pasted code and the return line, and that the indentation matches):
+
+   useEffect(() => {
+     if (!user && !signerStatus.isInitializing) {
+       openAuthModal(); 
+     }
+   }, [user, signerStatus.isInitializing]);
+
+6) Save the file by pressing:
+Ctrl + O  (then press Enter)
+Ctrl + X  (to exit nano)
+
+7) Restart Node with the following command:
+python3 -m venv .venv && . .venv/bin/activate && ./run_rl_swarm.sh
