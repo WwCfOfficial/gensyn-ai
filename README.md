@@ -339,7 +339,7 @@ nano $(python3 -c "import hivemind.p2p.p2p_daemon as m; print(m.__file__)")
 
 1) Steps to solve loading screen
 
-Stop everything with Ctrl + C
+   Stop everything with Ctrl + C
 
 2) Navigate to the project folder:
 ```
